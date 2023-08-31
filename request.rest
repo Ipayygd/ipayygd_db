@@ -1,0 +1,36 @@
+GET http://localhost:5000/projects
+
+###
+
+GET http://localhost:5000/projects/3
+
+###
+
+POST http://localhost:5000/projects
+Content-Type: application/json
+
+{
+  "title": "Title test",
+  "description": "description test",
+  "category": "category test",
+  "link": "link test",
+  "image": "image test"
+}
+
+###
+
+PATCH http://localhost:5000/projects/3
+Content-Type: application/json
+
+{
+  "title": "Title update",
+  "description": "description update",
+  "category": "category update",
+  "link": "link update",
+  "image": "image update"
+}
+
+
+###
+
+DELETE http://localhost:5000/projects/3
